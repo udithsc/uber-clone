@@ -21,7 +21,7 @@ const HomeScreen = () => {
             resizeMode: 'contain',
           }}
           source={{
-            uri: 'https://links.papareact.com/7pf',
+            uri: 'https://links.papareact.com/gzs',
           }}
         />
         <GooglePlacesAutocomplete
