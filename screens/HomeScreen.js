@@ -6,9 +6,11 @@ import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplet
 import NavOptions from '../components/NavOptions';
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
+import NavFavorites from '../components/NavFavorites';
 
 const HomeScreen = () => {
-  const dispatch = useDispatch(0);
+  const dispatch = useDispatch();
+
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
@@ -19,7 +21,7 @@ const HomeScreen = () => {
             resizeMode: 'contain',
           }}
           source={{
-            uri: 'https://links.papareact.com/gzs',
+            uri: 'https://links.papareact.com/7pf',
           }}
         />
         <GooglePlacesAutocomplete
@@ -54,6 +56,7 @@ const HomeScreen = () => {
           returnKeyType={'Search'}
         />
         <NavOptions />
+        <NavFavorites />
       </View>
     </SafeAreaView>
   );

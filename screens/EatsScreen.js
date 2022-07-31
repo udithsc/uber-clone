@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import tw from 'twrnc';
 
 const EatsScreen = () => {
   return (
-    <View>
-      <Text>EatsScreen</Text>
-    </View>
+    <SafeAreaView>
+      <Text style={tw`pt-20 text-center`}>Eats Screen Coming Soon</Text>
+    </SafeAreaView>
   );
 };
 
